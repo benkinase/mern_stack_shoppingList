@@ -1,0 +1,24 @@
+{
+  "name": "mern_shopinglist",
+  "version": "1.0.0",
+  "description": "Shopping list build with MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm start --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Benjamin Gbenimako",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
